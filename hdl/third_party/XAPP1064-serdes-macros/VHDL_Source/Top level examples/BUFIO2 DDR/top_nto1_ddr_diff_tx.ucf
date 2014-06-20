@@ -1,0 +1,14 @@
+# Timing
+
+net "tx_bufg_x1" 	period = 125 MHz ; # Transmitter global buffer = bit rate/serdes factor eg 1 Gbps/8
+
+# Pin Locations
+
+#net "dataout_p[0]"	loc = XX 	| IOSTANDARD = LVDS_25 ; 
+#net "dataout_n[0]"	loc = XX 	| IOSTANDARD = LVDS_25 ; 
+
+#net "clkout_p"		loc = XX 	| IOSTANDARD = LVDS_25 ;
+#net "clkout_n"		loc = XX 	| IOSTANDARD = LVDS_25 ;
+
+VCCAUX = 2.5 ;
+

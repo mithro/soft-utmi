@@ -1,0 +1,15 @@
+# Timing
+
+net "rx_bufg_x1" 	period = 125 MHz ; # Receiver global buffer = bit rate/serdes factor eg 1 Gbps/8
+
+# Pin Locations
+
+#net "datain_p[0]"	loc = XX	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ;
+#net "datain_n[0]"	loc = XX	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ;
+
+#net "clkin_p"		loc = XX	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ;
+#net "clkin_n"		loc = XX	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ;
+
+
+VCCAUX = 2.5 ;
+

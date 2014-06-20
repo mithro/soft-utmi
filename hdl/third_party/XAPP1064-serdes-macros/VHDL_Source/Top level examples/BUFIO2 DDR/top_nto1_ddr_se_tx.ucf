@@ -1,0 +1,12 @@
+# Timing
+
+net "tx_bufg_x1" 	period = 125 MHz ; # Transmitter global buffer = bit rate/serdes factor eg 1 Gbps/8
+
+# Pin Locations
+
+# net "dataout[0]"	loc = XX 	| IOSTANDARD = LVCMOS25 ; 
+
+# net "clkout"		loc = XX 	| IOSTANDARD = LVCMOS25 ;
+
+VCCAUX = 2.5 ;
+

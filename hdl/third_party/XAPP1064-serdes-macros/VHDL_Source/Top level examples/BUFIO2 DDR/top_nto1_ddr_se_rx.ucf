@@ -1,0 +1,14 @@
+# Timing
+
+net "rx_bufg_x1" 	period = 125 MHz ; # Receiver global buffer = bit rate/serdes factor eg 1 Gbps/8
+
+# Pin Locations
+
+#net "datain[0]"		loc = XX	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ;
+
+#net "clkin1"		loc = XX	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; # NOTE the same clock is required to be input on two separate pins in this case
+#net "clkin2"		loc = XX	| DIFF_TERM = TRUE | IOSTANDARD = LVDS_25 ; # A delay is required on the clock, and the delay element cannot feed two BUFIO2 directly
+
+
+VCCAUX = 2.5 ;
+

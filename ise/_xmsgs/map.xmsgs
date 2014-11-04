@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">dummy_out&lt;7&gt;</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">7</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">dummy_out&lt;6&gt;,
+dummy_out&lt;5&gt;,
+dummy_out&lt;4&gt;,
+dummy_out&lt;3&gt;,
+dummy_out&lt;2&gt;</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="warning" file="MapLib" num="830" delta="old" >Cannot automatically set COMPENSATION attribute for PLL_ADV <arg fmt="%s" index="1">clkin/rx_pll_adv_inst</arg> because no input clock signal was found.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">d_p</arg> connected to top level port <arg fmt="%s" index="2">d_p</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">d_n</arg> connected to top level port <arg fmt="%s" index="2">d_n</arg> has been removed.
+</msg>
+
+<msg type="warning" file="MapLib" num="701" delta="old" >Signal <arg fmt="%s" index="1">reset</arg> connected to top level port <arg fmt="%s" index="2">reset</arg> has been removed.
+</msg>
+
+<msg type="error" file="Pack" num="198" delta="old" >NCD was not produced.  All logic was removed from the design.  This is usually due to having no input or output PAD connections in the design and no nets or symbols marked as &apos;SAVE&apos;.  You can either add PADs or &apos;SAVE&apos; attributes to the design, or run &apos;map -u&apos; to disable logic trimming in the mapper.  For more information on trimming issues search the Xilinx Answers database for &quot;ERROR:Pack:198&quot; and read the Master Answer Record for MAP Trimming Issues.
+</msg>
+
+</messages>
+

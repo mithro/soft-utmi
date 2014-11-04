@@ -1,0 +1,494 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> 
+Reading design: serdes_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "serdes_top.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "serdes_top"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : serdes_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/tansell/foss/utmi/hdl/third_party/XAPP1064-serdes-macros/VHDL_Source/Macros/serdes_1_to_n_clk_pll_s8_diff.vhd" into library XAPP1064_serdes_macros
+Parsing entity <serdes_1_to_n_clk_pll_s8_diff>.
+Parsing architecture <arch_serdes_1_to_n_clk_pll_s8_diff> of entity <serdes_1_to_n_clk_pll_s8_diff>.
+Parsing VHDL file "/home/tansell/foss/utmi/hdl/third_party/XAPP1064-serdes-macros/VHDL_Source/Macros/clock_generator_pll_s8_diff.vhd" into library XAPP1064_serdes_macros
+Parsing entity <clock_generator_pll_s8_diff>.
+Parsing architecture <arch_clock_generator_pll_s8_diff> of entity <clock_generator_pll_s8_diff>.
+Parsing VHDL file "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" into library work
+Parsing entity <serdes_top>.
+Parsing architecture <arch_serdes_top> of entity <serdes_top>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <serdes_top> (architecture <arch_serdes_top>) from library <work>.
+
+Elaborating entity <serdes_1_to_n_clk_pll_s8_diff> (architecture <arch_serdes_1_to_n_clk_pll_s8_diff>) with generics from library <xapp1064_serdes_macros>.
+WARNING:HDLCompiler:1127 - "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" Line 84: Assignment to not_bufpll_lckd ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <serdes_top>.
+    Related source file is "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd".
+INFO:Xst:3210 - "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" line 63: Output port <datain> of the instance <clkin> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" line 63: Output port <rxioclk> of the instance <clkin> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" line 63: Output port <rx_serdesstrobe> of the instance <clkin> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" line 63: Output port <rx_bufg_pll_x1> of the instance <clkin> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" line 63: Output port <rx_pll_lckd> of the instance <clkin> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" line 63: Output port <rx_pllout_xs> of the instance <clkin> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" line 63: Output port <bitslip> of the instance <clkin> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/tansell/foss/utmi/hdl/serdes/serdes_top.vhd" line 63: Output port <rx_bufpll_lckd> of the instance <clkin> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <serdes_top> synthesized.
+
+Synthesizing Unit <serdes_1_to_n_clk_pll_s8_diff>.
+    Related source file is "/home/tansell/foss/utmi/hdl/third_party/XAPP1064-serdes-macros/VHDL_Source/Macros/serdes_1_to_n_clk_pll_s8_diff.vhd".
+        PLLD = 1
+        PLLX = 1
+        CLKIN_PERIOD = 2.08333333333333
+        S = 7
+        BS = true
+        DIFF_TERM = false
+    Found 1-bit register for signal <enable>.
+    Found 1-bit register for signal <cal_clk>.
+    Found 1-bit register for signal <rst_clk>.
+    Found 1-bit register for signal <bslip>.
+    Found 12-bit register for signal <counter>.
+    Found 3-bit register for signal <count>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <busyd>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 28                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 11                                             |
+    | Clock              | rx_bufg_pll_x1_int (rising_edge)               |
+    | Reset              | not_rx_bufpll_lckd (positive)                  |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 12-bit adder for signal <counter[11]_GND_7_o_add_1_OUT> created at line 175.
+    Found 3-bit adder for signal <count[2]_GND_7_o_add_18_OUT> created at line 204.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <serdes_1_to_n_clk_pll_s8_diff> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 12-bit adder                                          : 1
+ 3-bit adder                                           : 1
+# Registers                                            : 7
+ 1-bit register                                        : 5
+ 12-bit register                                       : 1
+ 3-bit register                                        : 1
+# Multiplexers                                         : 5
+ 1-bit 2-to-1 multiplexer                              : 4
+ 12-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <serdes_1_to_n_clk_pll_s8_diff>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <serdes_1_to_n_clk_pll_s8_diff> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 12-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 4
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <clkin/FSM_0> on signal <state[1:10]> with one-hot encoding.
+---------------------
+ State | Encoding
+---------------------
+ 0000  | 0000000001
+ 0001  | 0000000010
+ 0010  | 0000000100
+ 0011  | 0000001000
+ 0100  | 0000010000
+ 0101  | 0000100000
+ 0111  | 0001000000
+ 1001  | 0010000000
+ 1000  | 0100000000
+ 0110  | 1000000000
+---------------------
+
+Optimizing unit <serdes_top> ...
+
+Optimizing unit <serdes_1_to_n_clk_pll_s8_diff> ...
+INFO:Xst:2261 - The FF/Latch <clkin/state_FSM_FFd8> in Unit <serdes_top> is equivalent to the following FF/Latch, which will be removed : <clkin/cal_clk> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block serdes_top, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : serdes_top.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 65
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 5
+#      LUT3                        : 15
+#      LUT4                        : 6
+#      LUT5                        : 6
+#      LUT6                        : 6
+#      MUXCY                       : 11
+#      VCC                         : 1
+#      XORCY                       : 12
+# FlipFlops/Latches                : 28
+#      FDC                         : 23
+#      FDP                         : 2
+#      FDRE                        : 3
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 3
+#      BUFIO2                      : 1
+#      IBUF                        : 1
+#      IBUFDS                      : 1
+# Others                           : 7
+#      BUFIO2FB                    : 1
+#      BUFPLL                      : 1
+#      IODELAY2                    : 2
+#      ISERDES2                    : 2
+#      PLL_ADV                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              28  out of  54576     0%  
+ Number of Slice LUTs:                   40  out of  27288     0%  
+    Number used as Logic:                40  out of  27288     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     41
+   Number with an unused Flip Flop:      13  out of     41    31%  
+   Number with an unused LUT:             1  out of     41     2%  
+   Number of fully used LUT-FF pairs:    27  out of     41    65%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          11
+ Number of bonded IOBs:                   3  out of    218     1%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of PLL_ADVs:                      1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clkin/ddly_s                       | PLL_ADV:CLKOUT2        | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 0.526ns (Maximum Frequency: 1901.115MHz)
+   Minimum input arrival time before clock: 4.755ns
+   Maximum output required time after clock: 1.130ns
+   Maximum combinational path delay: 1.222ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkin/ddly_s'
+  Clock period: 0.526ns (frequency: 1901.115MHz)
+  Total number of paths / destination ports: 317 / 34
+-------------------------------------------------------------------------
+Delay:               3.682ns (Levels of Logic = 2)
+  Source:            clkin/state_FSM_FFd9 (FF)
+  Destination:       clkin/count_2 (FF)
+  Source Clock:      clkin/ddly_s rising 0.1X
+  Destination Clock: clkin/ddly_s rising 0.1X
+
+  Data Path: clkin/state_FSM_FFd9 to clkin/count_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.961  clkin/state_FSM_FFd9 (clkin/state_FSM_FFd9)
+     LUT5:I0->O            4   0.203   0.788  clkin/_n0283_inv21 (clkin/_n0283_inv2)
+     LUT6:I4->O            3   0.203   0.650  clkin/Mcount_count_val3 (clkin/Mcount_count_val)
+     FDRE:R                    0.430          clkin/count_0
+    ----------------------------------------
+    Total                      3.682ns (1.283ns logic, 2.399ns route)
+                                       (34.8% logic, 65.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkin/ddly_s'
+  Total number of paths / destination ports: 67 / 34
+-------------------------------------------------------------------------
+Offset:              4.755ns (Levels of Logic = 4)
+  Source:            clkin/iserdes_s:Q3 (PAD)
+  Destination:       clkin/count_2 (FF)
+  Destination Clock: clkin/ddly_s rising 0.1X
+
+  Data Path: clkin/iserdes_s:Q3 to clkin/count_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    ISERDES2:Q3            1   0.000   0.684  clkin/iserdes_s (clkin/mdataout<2>)
+     LUT2:I0->O            1   0.203   0.580  clkin/n0025<6>_SW0 (N6)
+     LUT6:I5->O            3   0.205   1.015  clkin/n0025<6> (clkin/n0025)
+     LUT6:I0->O            1   0.203   0.580  clkin/Mcount_count_val3_SW0 (N15)
+     LUT6:I5->O            3   0.205   0.650  clkin/Mcount_count_val3 (clkin/Mcount_count_val)
+     FDRE:R                    0.430          clkin/count_0
+    ----------------------------------------
+    Total                      4.755ns (1.246ns logic, 3.509ns route)
+                                       (26.2% logic, 73.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkin/ddly_s'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.130ns (Levels of Logic = 0)
+  Source:            clkin/state_FSM_FFd8 (FF)
+  Destination:       clkin/iodelay_m:CAL (PAD)
+  Source Clock:      clkin/ddly_s rising 0.1X
+
+  Data Path: clkin/state_FSM_FFd8 to clkin/iodelay_m:CAL
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  clkin/state_FSM_FFd8 (clkin/state_FSM_FFd8)
+    IODELAY2:CAL               0.000          clkin/iodelay_m
+    ----------------------------------------
+    Total                      1.130ns (0.447ns logic, 0.683ns route)
+                                       (39.6% logic, 60.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 17 / 15
+-------------------------------------------------------------------------
+Delay:               1.222ns (Levels of Logic = 1)
+  Source:            d_p (PAD)
+  Destination:       clkin/iodelay_s:IDATAIN (PAD)
+
+  Data Path: d_p to clkin/iodelay_s:IDATAIN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFDS:I->O           0   1.222   0.000  clkin/iob_clk_in (clkin/rx_clk_in)
+    IODELAY2:IDATAIN           0.000          clkin/iodelay_m
+    ----------------------------------------
+    Total                      1.222ns (1.222ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clkin/ddly_s
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkin/ddly_s   |    3.682|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 14.73 secs
+ 
+--> 
+
+
+Total memory usage is 413876 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

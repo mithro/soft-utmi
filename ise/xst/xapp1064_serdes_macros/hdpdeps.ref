@@ -1,0 +1,11 @@
+V3 12
+FL /home/tansell/foss/utmi/ise/../hdl/third_party/XAPP1064-serdes-macros/VHDL_Source/Macros/serdes_1_to_n_clk_pll_s8_diff.vhd 2014/06/20.23:50:15 P.20131013
+EN XAPP1064_serdes_macros/serdes_1_to_n_clk_pll_s8_diff 1403273462 \
+      FL /home/tansell/foss/utmi/ise/../hdl/third_party/XAPP1064-serdes-macros/VHDL_Source/Macros/serdes_1_to_n_clk_pll_s8_diff.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      LB unisim PH unisim/VCOMPONENTS 1381692182
+AR XAPP1064_serdes_macros/serdes_1_to_n_clk_pll_s8_diff/arch_serdes_1_to_n_clk_pll_s8_diff 1403273463 \
+      FL /home/tansell/foss/utmi/ise/../hdl/third_party/XAPP1064-serdes-macros/VHDL_Source/Macros/serdes_1_to_n_clk_pll_s8_diff.vhd \
+      EN XAPP1064_serdes_macros/serdes_1_to_n_clk_pll_s8_diff 1403273462 \
+      CP IBUFDS CP IODELAY2 CP BUFIO2 CP BUFIO2FB CP ISERDES2 CP PLL_ADV CP BUFG \
+      CP BUFPLL

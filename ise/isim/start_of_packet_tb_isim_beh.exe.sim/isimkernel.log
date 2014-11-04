@@ -1,0 +1,10 @@
+Command line:
+   start_of_packet_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60927
+
+Sat Jun 21 03:30:49 2014
+
+
+ Elaboration Time: 0.05 sec

@@ -1,0 +1,294 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'serdes_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o serdes_top_map.ncd serdes_top.ngd serdes_top.pcf 
+Target Device  : xc6slx45
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Sat Jun 21 01:00:37 2014
+
+Design Summary
+--------------
+Number of errors   :   1
+Number of warnings :   4
+
+Section 1 - Errors
+------------------
+ERROR:Pack:198 - NCD was not produced.  All logic was removed from the design. 
+   This is usually due to having no input or output PAD connections in the
+   design and no nets or symbols marked as 'SAVE'.  You can either add PADs or
+   'SAVE' attributes to the design, or run 'map -u' to disable logic trimming in
+   the mapper.  For more information on trimming issues search the Xilinx
+   Answers database for "ERROR:Pack:198" and read the Master Answer Record for
+   MAP Trimming Issues.
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:830 - Cannot automatically set COMPENSATION attribute for PLL_ADV
+   clkin/rx_pll_adv_inst because no input clock signal was found.
+WARNING:MapLib:701 - Signal d_p connected to top level port d_p has been
+   removed.
+WARNING:MapLib:701 - Signal d_n connected to top level port d_n has been
+   removed.
+WARNING:MapLib:701 - Signal reset connected to top level port reset has been
+   removed.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network dummy_out<7> has no load.
+INFO:LIT:395 - The above info message is repeated 7 more times for the following
+   (max. 5 shown):
+   dummy_out<6>,
+   dummy_out<5>,
+   dummy_out<4>,
+   dummy_out<3>,
+   dummy_out<2>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 107 block(s) removed
+ 121 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "reset_IBUF" is unused and has been removed.
+ Unused block "reset_IBUF" (BUF) removed.
+  The signal "reset" is unused and has been removed.
+   Unused block "reset" (PAD) removed.
+The signal "d_p" is unused and has been removed.
+ Unused block "d_p" (PAD) removed.
+The signal "d_n" is unused and has been removed.
+ Unused block "d_n" (PAD) removed.
+The signal "N0" is unused and has been removed.
+ Unused block "XST_VCC" (ONE) removed.
+The signal "N1" is unused and has been removed.
+ Unused block "XST_GND" (ZERO) removed.
+The signal "clkin/_n0283_inv2" is unused and has been removed.
+ Unused block "clkin/_n0283_inv21" (ROM) removed.
+  The signal "clkin/state_FSM_FFd9" is unused and has been removed.
+   Unused block "clkin/state_FSM_FFd9" (FF) removed.
+    The signal "clkin/rx_bufg_pll_x1_int" is unused and has been removed.
+     Unused block "clkin/bufg_135" (CKBUF) removed.
+      The signal "clkin/rx_pllout_x1" is unused and has been removed.
+    The signal "clkin/not_rx_bufpll_lckd" is unused and has been removed.
+     Unused block "clkin/not_rx_bufpll_lckd1" (ROM) removed.
+      The signal "clkin/rx_pll_lckd_int" is unused and has been removed.
+      The signal "clkin/rx_bufplllckd" is unused and has been removed.
+    The signal "clkin/state_FSM_FFd9-In" is unused and has been removed.
+     Unused block "clkin/state_FSM_FFd9-In1" (ROM) removed.
+      The signal "clkin/counter<11>" is unused and has been removed.
+       Unused block "clkin/counter_11" (FF) removed.
+        The signal "clkin/Mcount_counter11" is unused and has been removed.
+         Unused block "clkin/Mcount_counter_xor<11>" (XOR) removed.
+          The signal "clkin/Mcount_counter_cy<10>" is unused and has been removed.
+           Unused block "clkin/Mcount_counter_cy<10>" (MUX) removed.
+            The signal "clkin/Mcount_counter_cy<9>" is unused and has been removed.
+             Unused block "clkin/Mcount_counter_cy<9>" (MUX) removed.
+              The signal "clkin/Mcount_counter_cy<8>" is unused and has been removed.
+               Unused block "clkin/Mcount_counter_cy<8>" (MUX) removed.
+                The signal "clkin/Mcount_counter_cy<7>" is unused and has been removed.
+                 Unused block "clkin/Mcount_counter_cy<7>" (MUX) removed.
+                  The signal "clkin/Mcount_counter_cy<6>" is unused and has been removed.
+                   Unused block "clkin/Mcount_counter_cy<6>" (MUX) removed.
+                    The signal "clkin/Mcount_counter_cy<5>" is unused and has been removed.
+                     Unused block "clkin/Mcount_counter_cy<5>" (MUX) removed.
+                      The signal "clkin/Mcount_counter_cy<4>" is unused and has been removed.
+                       Unused block "clkin/Mcount_counter_cy<4>" (MUX) removed.
+                        The signal "clkin/Mcount_counter_cy<3>" is unused and has been removed.
+                         Unused block "clkin/Mcount_counter_cy<3>" (MUX) removed.
+                          The signal "clkin/Mcount_counter_cy<2>" is unused and has been removed.
+                           Unused block "clkin/Mcount_counter_cy<2>" (MUX) removed.
+                            The signal "clkin/Mcount_counter_cy<1>" is unused and has been removed.
+                             Unused block "clkin/Mcount_counter_cy<1>" (MUX) removed.
+                              The signal "clkin/Mcount_counter_cy<0>" is unused and has been removed.
+                               Unused block "clkin/Mcount_counter_cy<0>" (MUX) removed.
+                                The signal "clkin/counter<11>_inv" is unused and has been removed.
+                                 Unused block "clkin/counter<11>_inv1_INV_0" (BUF) removed.
+                                The signal "clkin/Mcount_counter_lut<0>" is unused and has been removed.
+                                 Unused block "clkin/Mcount_counter_lut<0>" (ROM) removed.
+                                  The signal "clkin/counter<0>" is unused and has been removed.
+                                   Unused block "clkin/counter_0" (FF) removed.
+                                    The signal "clkin/Mcount_counter" is unused and has been removed.
+                                     Unused block "clkin/Mcount_counter_xor<0>" (XOR) removed.
+                              The signal "clkin/Mcount_counter_lut<1>" is unused and has been removed.
+                               Unused block "clkin/Mcount_counter_lut<1>" (ROM) removed.
+                                The signal "clkin/counter<1>" is unused and has been removed.
+                                 Unused block "clkin/counter_1" (FF) removed.
+                                  The signal "clkin/Mcount_counter1" is unused and has been removed.
+                                   Unused block "clkin/Mcount_counter_xor<1>" (XOR) removed.
+                            The signal "clkin/Mcount_counter_lut<2>" is unused and has been removed.
+                             Unused block "clkin/Mcount_counter_lut<2>" (ROM) removed.
+                              The signal "clkin/counter<2>" is unused and has been removed.
+                               Unused block "clkin/counter_2" (FF) removed.
+                                The signal "clkin/Mcount_counter2" is unused and has been removed.
+                                 Unused block "clkin/Mcount_counter_xor<2>" (XOR) removed.
+                          The signal "clkin/Mcount_counter_lut<3>" is unused and has been removed.
+                           Unused block "clkin/Mcount_counter_lut<3>" (ROM) removed.
+                            The signal "clkin/counter<3>" is unused and has been removed.
+                             Unused block "clkin/counter_3" (FF) removed.
+                              The signal "clkin/Mcount_counter3" is unused and has been removed.
+                               Unused block "clkin/Mcount_counter_xor<3>" (XOR) removed.
+                        The signal "clkin/Mcount_counter_lut<4>" is unused and has been removed.
+                         Unused block "clkin/Mcount_counter_lut<4>" (ROM) removed.
+                          The signal "clkin/counter<4>" is unused and has been removed.
+                           Unused block "clkin/counter_4" (FF) removed.
+                            The signal "clkin/Mcount_counter4" is unused and has been removed.
+                             Unused block "clkin/Mcount_counter_xor<4>" (XOR) removed.
+                      The signal "clkin/Mcount_counter_lut<5>" is unused and has been removed.
+                       Unused block "clkin/Mcount_counter_lut<5>" (ROM) removed.
+                        The signal "clkin/counter<5>" is unused and has been removed.
+                         Unused block "clkin/counter_5" (FF) removed.
+                          The signal "clkin/Mcount_counter5" is unused and has been removed.
+                           Unused block "clkin/Mcount_counter_xor<5>" (XOR) removed.
+                    The signal "clkin/Mcount_counter_lut<6>" is unused and has been removed.
+                     Unused block "clkin/Mcount_counter_lut<6>" (ROM) removed.
+                      The signal "clkin/counter<6>" is unused and has been removed.
+                       Unused block "clkin/counter_6" (FF) removed.
+                        The signal "clkin/Mcount_counter6" is unused and has been removed.
+                         Unused block "clkin/Mcount_counter_xor<6>" (XOR) removed.
+                  The signal "clkin/Mcount_counter_lut<7>" is unused and has been removed.
+                   Unused block "clkin/Mcount_counter_lut<7>" (ROM) removed.
+                    The signal "clkin/counter<7>" is unused and has been removed.
+                     Unused block "clkin/counter_7" (FF) removed.
+                      The signal "clkin/Mcount_counter7" is unused and has been removed.
+                       Unused block "clkin/Mcount_counter_xor<7>" (XOR) removed.
+                The signal "clkin/Mcount_counter_lut<8>" is unused and has been removed.
+                 Unused block "clkin/Mcount_counter_lut<8>" (ROM) removed.
+                  The signal "clkin/counter<8>" is unused and has been removed.
+                   Unused block "clkin/counter_8" (FF) removed.
+                    The signal "clkin/Mcount_counter8" is unused and has been removed.
+                     Unused block "clkin/Mcount_counter_xor<8>" (XOR) removed.
+              The signal "clkin/Mcount_counter_lut<9>" is unused and has been removed.
+               Unused block "clkin/Mcount_counter_lut<9>" (ROM) removed.
+                The signal "clkin/counter<9>" is unused and has been removed.
+                 Unused block "clkin/counter_9" (FF) removed.
+                  The signal "clkin/Mcount_counter9" is unused and has been removed.
+                   Unused block "clkin/Mcount_counter_xor<9>" (XOR) removed.
+            The signal "clkin/Mcount_counter_lut<10>" is unused and has been removed.
+             Unused block "clkin/Mcount_counter_lut<10>" (ROM) removed.
+              The signal "clkin/counter<10>" is unused and has been removed.
+               Unused block "clkin/counter_10" (FF) removed.
+                The signal "clkin/Mcount_counter10" is unused and has been removed.
+                 Unused block "clkin/Mcount_counter_xor<10>" (XOR) removed.
+      The signal "clkin/busyd" is unused and has been removed.
+       Unused block "clkin/busyd" (FF) removed.
+        The signal "clkin/busy_clk_PWR_7_o_MUX_30_o" is unused and has been removed.
+         Unused block "clkin/Mmux_busy_clk_PWR_7_o_MUX_30_o11" (ROM) removed.
+          The signal "clkin/busym" is unused and has been removed.
+      The signal "clkin/state_FSM_FFd10" is unused and has been removed.
+       Unused block "clkin/state_FSM_FFd10" (FF) removed.
+        The signal "clkin/state_FSM_FFd10-In" is unused and has been removed.
+         Unused block "clkin/state_FSM_FFd10-In1" (ROM) removed.
+          The signal "clkin/enable" is unused and has been removed.
+           Unused block "clkin/enable" (FF) removed.
+            The signal "clkin/enable_rstpot" is unused and has been removed.
+             Unused block "clkin/enable_rstpot" (ROM) removed.
+  The signal "clkin/state_FSM_FFd8" is unused and has been removed.
+   Unused block "clkin/state_FSM_FFd8" (FF) removed.
+    The signal "clkin/state_FSM_FFd8-In" is unused and has been removed.
+     Unused block "clkin/state_FSM_FFd8-In1" (ROM) removed.
+The signal "clkin/count<2>" is unused and has been removed.
+ Unused block "clkin/count_2" (SFF) removed.
+  The signal "clkin/_n0283_inv" is unused and has been removed.
+   Unused block "clkin/_n0283_inv" (ROM) removed.
+    The signal "clkin/state_FSM_FFd6" is unused and has been removed.
+     Unused block "clkin/state_FSM_FFd6" (FF) removed.
+      The signal "clkin/state_FSM_FFd6-In" is unused and has been removed.
+       Unused block "clkin/Mmux_rst_clk_GND_7_o_MUX_28_o11" (ROM) removed.
+        The signal "clkin/state_FSM_FFd7" is unused and has been removed.
+         Unused block "clkin/state_FSM_FFd7" (FF) removed.
+          The signal "clkin/state_FSM_FFd7-In" is unused and has been removed.
+           Unused block "clkin/state_FSM_FFd7-In1" (ROM) removed.
+    The signal "N4" is unused and has been removed.
+     Unused block "clkin/_n0283_inv_SW0" (ROM) removed.
+      The signal "clkin/state_FSM_FFd2" is unused and has been removed.
+       Unused block "clkin/state_FSM_FFd2" (FF) removed.
+        The signal "clkin/state_FSM_FFd2-In" is unused and has been removed.
+         Unused block "clkin/state_FSM_FFd2-In1" (ROM) removed.
+          The signal "clkin/n0025" is unused and has been removed.
+           Unused block "clkin/n0025<6>" (ROM) removed.
+            The signal "clkin/mdataout<7>" is unused and has been removed.
+            The signal "clkin/mdataout<6>" is unused and has been removed.
+            The signal "clkin/mdataout<5>" is unused and has been removed.
+            The signal "clkin/mdataout<4>" is unused and has been removed.
+            The signal "clkin/mdataout<3>" is unused and has been removed.
+            The signal "N6" is unused and has been removed.
+             Unused block "clkin/n0025<6>_SW0" (ROM) removed.
+              The signal "clkin/mdataout<2>" is unused and has been removed.
+              The signal "clkin/mdataout<1>" is unused and has been removed.
+          The signal "clkin/state_FSM_FFd4" is unused and has been removed.
+           Unused block "clkin/state_FSM_FFd4" (FF) removed.
+            The signal "clkin/state_FSM_FFd4-In" is unused and has been removed.
+             Unused block "clkin/state_FSM_FFd4-In1" (ROM) removed.
+              The signal "clkin/count<1>" is unused and has been removed.
+               Unused block "clkin/count_1" (SFF) removed.
+                The signal "clkin/Result<1>" is unused and has been removed.
+                 Unused block "clkin/Mcount_count_xor<1>11" (ROM) removed.
+                  The signal "clkin/count<0>" is unused and has been removed.
+                   Unused block "clkin/count_0" (SFF) removed.
+                    The signal "clkin/Result<0>" is unused and has been removed.
+                     Unused block "clkin/Mcount_count_xor<0>11_INV_0" (BUF) removed.
+                    The signal "clkin/Mcount_count_val" is unused and has been removed.
+                     Unused block "clkin/Mcount_count_val3" (ROM) removed.
+                      The signal "N15" is unused and has been removed.
+                       Unused block "clkin/Mcount_count_val3_SW0" (ROM) removed.
+                        The signal "clkin/state_FSM_FFd5" is unused and has been removed.
+                         Unused block "clkin/state_FSM_FFd5" (FF) removed.
+                          The signal "clkin/state_FSM_FFd5-In" is unused and has been removed.
+                           Unused block "clkin/state_FSM_FFd5-In1" (ROM) removed.
+                        The signal "clkin/state_FSM_FFd1" is unused and has been removed.
+                         Unused block "clkin/state_FSM_FFd1" (FF) removed.
+                          The signal "clkin/state_FSM_FFd1-In" is unused and has been removed.
+                           Unused block "clkin/state_FSM_FFd1-In1" (ROM) removed.
+                            The signal "clkin/count[2]_PWR_7_o_equal_20_o" is unused and has been removed.
+                             Unused block "clkin/count[2]_PWR_7_o_equal_20_o<2>1" (ROM) removed.
+  The signal "clkin/Result<2>" is unused and has been removed.
+   Unused block "clkin/Mcount_count_xor<2>11" (ROM) removed.
+The signal "clkin/bslip" is unused and has been removed.
+ Unused block "clkin/bslip" (FF) removed.
+  The signal "clkin/bslip_rstpot" is unused and has been removed.
+   Unused block "clkin/bslip_rstpot" (ROM) removed.
+    The signal "N2" is unused and has been removed.
+     Unused block "clkin/_n0256_inv_SW0" (ROM) removed.
+    The signal "N13" is unused and has been removed.
+     Unused block "clkin/_n0256_inv_SW1" (ROM) removed.
+The signal "clkin/rst_clk" is unused and has been removed.
+ Unused block "clkin/rst_clk" (FF) removed.
+  The signal "clkin/rst_clk_rstpot" is unused and has been removed.
+   Unused block "clkin/rst_clk_rstpot" (ROM) removed.
+    The signal "N11" is unused and has been removed.
+     Unused block "clkin/_n0227_inv1_SW0" (ROM) removed.
+The signal "clkin/rx_serdesstrobe_int" is unused and has been removed.
+The signal "clkin/rxioclk_int" is unused and has been removed.
+The signal "clkin/buf_P_clk" is unused and has been removed.
+The signal "clkin/buf_pll_fb_clk" is unused and has been removed.
+The signal "clkin/ddly_s" is unused and has been removed.
+The signal "clkin/ddly_m" is unused and has been removed.
+The signal "clkin/rx_pllout_xs_int" is unused and has been removed.
+The signal "clkin/pd_edge" is unused and has been removed.
+The signal "clkin/P_clk" is unused and has been removed.
+The signal "clkin/feedback" is unused and has been removed.
+The signal "clkin/cascade" is unused and has been removed.
+The signal "clkin/rx_clk_in" is unused and has been removed.
+Unused block "clkin/P_clk_bufio2_inst" (BUFIO2) removed.
+Unused block "clkin/P_clk_bufio2fb_inst" (BUFIO2FB) removed.
+Unused block "clkin/iob_clk_in" (IBUFDS) removed.
+Unused block "clkin/iodelay_m" (IODELAY2) removed.
+Unused block "clkin/iodelay_s" (IODELAY2) removed.
+Unused block "clkin/iserdes_m" (ISERDES2) removed.
+Unused block "clkin/iserdes_s" (ISERDES2) removed.
+Unused block "clkin/rx_bufpll_inst" (BUFPLL) removed.
+Unused block "clkin/rx_pll_adv_inst" (PLL_ADV) removed.

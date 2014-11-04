@@ -1,0 +1,5 @@
+vhdl XAPP1064_serdes_macros "../hdl/third_party/XAPP1064-serdes-macros/VHDL_Source/Macros/serdes_1_to_n_clk_pll_s8_diff.vhd"
+vhdl work "../hdl/serdes/tests/usbgen.vhd"
+vhdl work "../hdl/serdes/serdes_top.vhd"
+vhdl work "../hdl/serdes/tests/start_of_packet_tb.vhd"
+vhdl XAPP1064_serdes_macros "../hdl/third_party/XAPP1064-serdes-macros/VHDL_Source/Macros/clock_generator_pll_s8_diff.vhd"

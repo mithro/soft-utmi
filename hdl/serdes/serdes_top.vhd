@@ -1,12 +1,19 @@
 
 -- Recommended reading 
 
+-- This is called asynchronous communication or self-synchronous, also known as data and/or clock recovery
+-- 
+
 -- 1) XAPP224 (v2.5) July 11, 2005 -- Data Recovery -- Author: Nick Sawyer
 -- 2) XAPP250 (v1.3.2) May 2, 2007 -- Clock and Data Recovery with Coded Data Streams -- Author: Leonard Dieguez
 -- 3) XAPP861 (v1.1) July 20, 2007 -- Efficient 8X Oversampling Asynchronous Serial Data Recovery Using IDELAY -- Author: John F. Snow
--- 4) XAPP523 (v1.0) April 6, 2012 -- LVDS 4x Asynchronous Oversampling Using 7 Series FPGAs -- Author: Marc Defossez
+-- 4) **** XAPP523 (v1.0) April 6, 2012 -- LVDS 4x Asynchronous Oversampling Using 7 Series FPGAs -- Author: Marc Defossez
 -- 5) XAPP1064 (v1.2) November 19, 2013 -- Source-Synchronous Serialization and Deserialization (up to 1050 Mb/s) -- Author: NIck Sawyer
 
+
+-- CDC - clock-domain crossing circuit
+
+-- http://forums.xilinx.com/t5/7-Series-FPGAs/7-series-ISERDES-OVERSAMPLE-bit-order-output/m-p/365627#M2455
 -- *) UG381 (v1.6) February 14, 2014 -- Spartan-6 FPGA SelectIO Resources User Guide
 
 
